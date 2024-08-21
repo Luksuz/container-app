@@ -7,7 +7,7 @@ const CroppedImages = ({containerCode, croppedImages}) => {
           {croppedImages.map((img, index) => {
               console.log(img)
             return(
-                <img className={index == 0 && "border border-3 border-warning"} width={"20em"} key={index} src={img} alt={`Cropped Image ${index}`} />
+                <img className={index === 0 && "border border-3 border-warning"} key={index} src={img} /> // eslint-disable-line
             )
             })}
         </div>}

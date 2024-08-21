@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import FormComponent from './components/FormComponent';
 import ResultComponent from './components/ResultComponent';
 import CroppedImages from './components/CroppedImages';
@@ -70,7 +70,7 @@ function App() {
       setContainerCode("Error handling file");
       console.error('Error handling file:', error);
     } finally {
-    setSearching(false); // Set searching back to false once all operations complete
+    setSearching(false);
     }
   };
   
